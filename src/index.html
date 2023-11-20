@@ -12,13 +12,14 @@
   <header class="h-screen bg-primarycolor fixed top-0 left-0  w-full z-50">
     <nav class="container relative h-14 flex justify-between items-center text-whitecolor ">
         <left-nav>
-            <a href="" class="text-2xl uppercase">
-                BUR<span class="text-secondarycolor font-oswald">GER</span>
+            <a href="" class="text-2xl uppercase font-oswald">
+                BUR<span class="text-secondarycolor">GER</span>
             </a>
         </left-nav>
         <div class="right-nav hidden absolute top-0 left-0 w-full py-14
-         bg-primarycolor border-b border-secondarycolor ">
-            <ul class=" flex flex-col text-center gap-5">
+         bg-primarycolor border-b border-secondarycolor
+          md:block md:static md:py-0 md:border-none md:w-auto md:ml-auto ">
+            <ul class=" flex flex-col text-center gap-5 md:flex md:flex-row">
                 <li class>
                     <a class=" hover:text-secondarycolor
                      ease-in duration-200" href="Home">Home</a>
@@ -42,7 +43,7 @@
             </ul>
 
 
-            <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer">
+            <div class="absolute top-[0.7rem] right-4 text-2xl cursor-pointer md:hidden">
                 <i class="fa-solid fa-xmark"></i>
             </div>
         </div>
@@ -50,8 +51,8 @@
         <div class="flex items-center gap-5">
             <i class="ri-moon-line ml-4 cursor-pointer text-xl"></i>
 
-            <div>
-                <i class="fa-solid fa-bars cursor-pointer text-xl"></i>
+            <div class="md:hidden">
+                <i class="fa-solid fa-bars cursor-pointer text-xl "></i>
             </div>
         </div>
     </nav>
